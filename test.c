@@ -1,31 +1,36 @@
+//17. Write Program use switch statement. Display Monday to Sunday
+
 #include<stdio.h>
 int main()
 {
-	int salary;
-	float HRA,DA,grosssalary;
+	int days;
+	printf("enter option between 1to7 to print days....");
+	scanf("%i",&days);
 	
-	printf("enter  basic salary...",salary);
-	scanf("%i",&salary);
-	
-	if(salary<=10000)
+	switch(days)
 	{
-		HRA =salary *0.20;
-		DA = salary *0.80;
+		case 1: printf("Today is monday");
+		break;
+		
+		case 2: printf("Today is tuesday");
+		break;
+		
+		case 3: printf("Today is wednesday");
+		break;
+		
+		case 4: printf("Today is thursday");
+		break;
+		
+		case 5: printf("Today is friday");
+		break;
+		
+		case 6: printf("Today is saturday");
+		break;
+		
+		case 7: printf("Today is sunday");
+		break;5
+		
+		default: printf("invailad option try again");
 	}
-	else if(salary<=20000)
-	{
-		HRA = salary *0.25;
-		DA = salary *0.90;
-	}
-	if (salary>20000)
-	{
-		HRA = salary *0.3;
-		DA = salary *0.95;
-	}
-	 grosssalary= salary + HRA + DA;
-        printf("\nHRA of your salary is....%.2f",HRA);
-		printf("\nDA of your salary is.....%.2f",DA);
-		printf("\nyour basic salary is.....%i",salary);
-		printf("\n\nGross salary is.....%.2f",grosssalary);
 	return 0;
 }
