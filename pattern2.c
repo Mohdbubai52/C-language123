@@ -1,27 +1,21 @@
 #include<stdio.h>
 int main()
 {
+	int row,col;
 	
-	int r,c;
-	for(r=1;r<=5;r++)
+	for(row=3;row>=1;row--)//1;1>=1;1--
 	{
-		for(c=1;c<=r;c++)
+		for(col=1;col<=row;col++)//1;1<=1;1++
 		{
-				if(r%2==0)
-				{
-					printf("A ");
-				}
-				
-				else
-				{
-					printf("B ");
-				}
-				
-				
+			printf(" ");
+		}
+		
+		for(col=row;col<=3;col++)//1;1<=3;1++
+		{
+				printf("* ");
 		}
 		
 		printf("\n");
 	}
-	
 	return 0;
 }

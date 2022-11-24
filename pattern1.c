@@ -4,9 +4,9 @@ int main()
     int col,row;
     for (row=1;row<=3;row++)
     {
-        for (col=1; col <=3; col++)
+        for (col=1;col<=row; col++)
         {
-           printf("* ");
+           printf(" #");
         }
         printf("\n");
     }
