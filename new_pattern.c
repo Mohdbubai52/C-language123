@@ -1,26 +1,47 @@
-#include<stdio.h>
-int pattern(int s, int e)
+#include<iostream>
+using namespace std;
+class guest
 {
-    int r,c;
-    for (r=s;r<=e;r++)
+   
+    public:
+    int people;
+    string name;
+    double server;
+    
+    void Server(double sr)
     {
-        for(c=5;c<=r;c++)
-        {
-            printf(" *");
-        }
-        printf("\n");
+        sr=server;
+        sr=people*20.7;
     }
-    return 0;
-}
+};
 
+void wedding()
+{
+	guest m;
+	int mn;
+	cout<<"enter number";
+//	cin>>mn;
+	cin>>m.people;
+	cout<<m.server;
+};
 
 int main()
 {
-    int start,end;
-    printf("enter starting value...");
-    scanf("%i",&start);
-    printf("enter end value..");
-    scanf("%i",&end);
-    pattern(start,end);
+    guest mb;
+    int list;
+    cout<<"enter value";
+    cin>>list;
+    while (true)
+    {
+        switch(list)
+        {
+            case 1:
+            wedding;
+            break;
+            case 2:
+           
+            break;
+        }
+    }
     return 0;
 }
