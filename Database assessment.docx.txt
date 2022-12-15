@@ -1,0 +1,37 @@
+Database assessment
+1.create database assessment;
+2.create table noble_price_winner;
+3.insert into noble_price_winner (‘year’,’subject’,’winner’,’country’,’category’) values();
+
+Question 1
+? Write sql query to find the nobel prize winners of the year 1970. Return year,subject and winne
+Querry=
+Select year,subject,winner from noble_price_winner where year = “1970”;
+
+
+Question 2:
+? Write sql query to find the nobel prize winners in chemistry between the years 1965 and 1975. Begin and end values are included Return year, subject, winner and country 
+Querry:
+Select year,subject,winner from noble_price_winner where year <”1975” and subject=”chemistry”;
+
+
+Question 3
+? Write sql query to retrieve the details of the winners whose first name matches with the string ‘Louis’. Return year,subject,winner,country
+Querry
+Select year,subject,winner from noble_price_winner where winner like ‘louis%’;
+
+
+Question 4
+? Write sql query to find Nobel prize winners for the subject that does not begin with the letter ‘P’. Order the result by year, descending and winner in ascending 
+Querry
+Select year,winner,country from nobel_price_winner where winner not like ‘p%’;
+
+
+Question 5
+? Write sql query to find the details of 1970 Nobel prize winners. Order the result by subject, ascending except for ‘Chemistry’ and ‘Economics’ which will come at the end of the result set. Return year, subject, winner , country and category.
+Querry 
+Select year,subject,winner,country,category from noble_price_winner where subject not like ‘chemistry%’;
+
+
+
+
